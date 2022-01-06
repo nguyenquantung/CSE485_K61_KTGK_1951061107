@@ -7,7 +7,7 @@
         <form action="" method="POST">
             <div class="form-group">
                 <label for="txtHoTen">Họ và tên</label>
-                <input type="text" class="form-control" id="txtHoTen" name="hovaten" placeholder="Nhập họ tên">
+                <input type="text" class="form-control" id="txtHoTen" name="hovaten" value="<?php echo $da placeholder="Nhập họ tên">
                 <!-- <small id="txtHoTenHelp" class="form-text text-muted">Có thể dùng nó hiển thị thông báo lỗi hoặc gợi ý</small> -->
             </div>
             <div class="form-group">

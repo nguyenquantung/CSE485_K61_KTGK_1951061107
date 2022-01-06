@@ -1,4 +1,5 @@
 <?php
+    include"template/header.php";
       // admin.php TRUYỀN DỮ LIỆU SANG
     // deleteEmployee: NHẬN DỮ LIỆU TỪ admin.php gửi sang
     $magv = $_GET['magv'];
@@ -14,7 +15,7 @@
     $number = mysqli_query($conn,$sql);
 
     if($number > 0){
-        header("location: controller=thanh-vien&action=xoa"); //Chuyển hướng về Trang quản trị
+        header("location: index.php?controller=thanh-vien&action=list"); //Chuyển hướng về Trang quản trị
     }else{
         header("location: error.php"); //Chuyển hướng, hiển thị thông báo lỗi
     }
