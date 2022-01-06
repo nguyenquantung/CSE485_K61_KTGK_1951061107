@@ -16,6 +16,7 @@ include "template/header.php"
                         <th scope="col">Học hàm</th>
                         <th scope="col"> Học vị</th>
                         <th scope="col"> Cơ quan/Đơn vị </th>
+                        <th scope="col">Thêm</th>
                         <th scope="col">Sửa</th>
                         <th scope="col">Xóa</th>
                     </tr>
@@ -44,8 +45,9 @@ include "template/header.php"
                                 <td><?php echo $row['hocham']; ?></td>
                                 <td><?php echo $row['hocvi']; ?></td>
                                 <td><?php echo $row['coquan']; ?></td>
-                                <td><a href="sua_nhan_vien.php?id=<?php echo $row['magv']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                <td><a href="xoa_nhan_vien.php?id=<?php echo $row['magv']; ?>"><i class="bi bi-trash"></i></a></td>
+                                <td><a href="index.php?controller=thanh-vien&action=add"><i class="bi bi-person-plus"></i></a></td>
+                                <td><a href="index.php?controller=thanh-vien&action=edit magv<?php echo $row['magv']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                <td><a href="index.php?controller=thanh-vien&action=edit?magv=<?php echo $row['magv']; ?>"><i class="bi bi-trash"></i></a></td>
                             </tr>
                 <?php
                         }

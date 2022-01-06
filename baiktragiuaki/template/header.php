@@ -14,7 +14,7 @@
         <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hệ thống quản lý đại học</a>   
+                <a class="navbar-brand" href="index.php?controller=thanh-vien&action=list">Hệ thống quản lý đại học</a>   
                 </div>
             </div>
             </nav>
